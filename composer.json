@@ -13,10 +13,7 @@
         "f-oris/easy-cache": "^1.0"
     },
     "require-dev": {
-        "f-oris/easy-sdk-framework": "1.0",
-        "phpunit/phpunit": "^8.1",
-        "mockery/mockery": "^1.2",
-        "fzaninotto/faker": "^1.8"
+        "f-oris/easy-sdk-develop": "^1.0"
     },
     "autoload": {
         "psr-4": {
