@@ -16,7 +16,15 @@ return [
      */
     'drivers' => [
         'file' => [
-            'path' => __DIR__ . '/cache/',
+            'path' => __DIR__ . '/../cache/',
+        ],
+        'memcached' => [
+            'dsn' => [
+                'memcached://localhost:11211'
+            ]
+        ],
+        'redis' => [
+            'dsn' => 'redis://localhost:6379',
         ]
     ]
 ];
