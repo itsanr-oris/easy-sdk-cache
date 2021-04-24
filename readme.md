@@ -9,7 +9,7 @@ Easy sdk Cache扩展组件包
 通过composer引入扩展包
 
 ```bash
-composer require f-oris/easy-sdk-cache
+composer require f-oris/easy-sdk-cache:^2.0
 ```
 
 Publish配置信息
