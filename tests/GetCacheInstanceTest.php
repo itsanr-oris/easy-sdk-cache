@@ -26,7 +26,7 @@ class GetCacheInstanceTest extends \Foris\Easy\Sdk\Develop\TestCase
      */
     public function testGetHttpClientInstance()
     {
-        $this->assertInstanceOf(Cache::class, $this->app()->get('cache'));
+        $this->assertInstanceOf(Cache::class, $this->app()->get(Cache::class));
     }
 
     /**
