@@ -22,8 +22,8 @@ trait HasCache
     {
         if (method_exists($this, 'app')) {
             $app = $this->app();
-            if (!empty($app) && $app instanceof ServiceContainer && isset($app['cache'])) {
-                return $app['cache'];
+            if (!empty($app) && $app instanceof ServiceContainer && $app->has(Cache::class)) {
+                return $app->get(Cache::class);
             }
         }
 

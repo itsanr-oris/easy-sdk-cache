@@ -23,12 +23,12 @@ class ServiceProvider extends \Foris\Easy\Sdk\ServiceProvider
             __DIR__ . '/config/cache.php' => $this->app()->getConfigPath('cache.php')
         ]);
 
-        $this->app()->singleton('cache_adapter_factory', function () {
+        $this->app()->singleton(Factory::class, function () {
             return new Factory();
         });
 
-        $this->app()->singleton('cache', function ($app) {
-            return new Cache($app['cache_adapter_factory'], $app->config['cache']);
+        $this->app()->singleton(Cache::class, function ($app) {
+            return new Cache($app[Factory::class], $app->config['cache']);
         });
     }
 }
